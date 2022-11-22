@@ -1107,17 +1107,17 @@ const MainPage = () => {
         </header>
         <div className="grid-col-4-10">
           <p>
-            My friends like to call me Mr. Whiskers but my name is Ivan Stoyanov (Иван Стоянов).
+            My friends like to call me Mr. Whiskers, but my name is Ivan Stoyanov (Иван Стоянов).
             Born in 1995, I am originally from Bulgaria but live in Denmark since 2015.
             Cooking, baking, watching documentaries, kayaking, walking and hiking in nature are some of my hobbies.
-            My interests in technology, sustainability, environmentallism, renewalable energy and economics are making me more self-aware of what is happening around the world.
+            My interests in technology, sustainability, environmentalism, renewable energy and economics are making me more self-aware of what is happening around the world.
             Work-life balance is important for me and I strive everyday to become a better version of myself.
           </p>
           <p>
             As a constructive and open-minded person, I often find myself smiling a lot, bringing positive vibes and helping others.
             According to the 16 Personalities test, mine is INFP type but I disagree with being introverted.
             This is because I like to talk and engage into conversations, and hangout with people.
-            Creativity and thinking out of the box are giving myself the possibility to do things in different ways.
+            Creativity and thinking out of the box are giving me the possibility to do things in different ways.
             My motivation, determination and positivity help me in facing challenges or working under pressure.
           </p>
           <p>
@@ -1127,6 +1127,11 @@ const MainPage = () => {
             I am a fast and passionate learner. I do not like to leave my work unfinished and I value the quality over the quantity.
             I prefer to be consistent and to divide the work into small tasks, or to apply Design Thinking / SCRUM methods to make it more efficient.
           </p>
+        </div>
+        <div className="grid-wrapper-column">
+          <ButtonRegular className="center" linkRef="https://drive.google.com/file/d/1_-nW8q7e2pk60kkg8cxR1u4MtUNR1QLC/view" btnMargin="20px auto" btnColor={whiteRegular} btnHover={buttonColor} btnTextColor="#000" btnTextHoverColor={whiteRegular} btnText="See my CV">
+            <FontAwesomeIcon pull="right" icon={solid('user-ninja')} size="1x" />
+          </ButtonRegular>
         </div>
         <h2 className="grid-wrapper-column">Reach out to me</h2>
         <div className="grid-wrapper-column">
