@@ -163,7 +163,7 @@
         "roles": ["Front-End Developer"],
         "period": "11/2022",
         "link": "/",
-        "repository": "/",
+        "repository": "https://github.com/vanchoy/portfolio-template",
         "category": "webdev",
         "type": "opensource",
         "demo": true
