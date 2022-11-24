@@ -1,5 +1,7 @@
 import { createRoot } from 'react-dom/client';
 
+import ReactGA from 'react-ga4';
+
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,6 +16,9 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/service-worker.js");
   });
 }
+
+ReactGA.initialize("G-X5992Z40J2");
+ReactGA.send("pageview");
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
