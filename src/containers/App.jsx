@@ -1,5 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import ReactGA from 'react-ga';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -12,6 +14,10 @@ import { ButtonRegular } from '../components/buttons/ButtonRegular';
 import { buttonColor, whiteRegular } from '../constants/styles';
 
 import Routing from './Routing';
+
+const TRACKING_ID = "G-X5992Z40J2";
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const App = () => {
   return (
