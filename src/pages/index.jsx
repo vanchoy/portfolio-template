@@ -1129,7 +1129,7 @@ const MainPage = () => {
           </p>
         </div>
         <div className="grid-wrapper-column">
-          <ButtonRegular className="center" linkRef="https://drive.google.com/file/d/1_-nW8q7e2pk60kkg8cxR1u4MtUNR1QLC/view" btnMargin="20px auto" btnColor={whiteRegular} btnHover={buttonColor} btnTextColor="#000" btnTextHoverColor={whiteRegular} btnText="See my CV">
+          <ButtonRegular className="center" linkRef="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d36f02c2-04a1-4f52-bc2c-e3e9fc6cf082" btnMargin="20px auto" btnColor={whiteRegular} btnHover={buttonColor} btnTextColor="#000" btnTextHoverColor={whiteRegular} btnText="See my CV">
             <FontAwesomeIcon pull="right" icon={solid('user-ninja')} size="1x" />
           </ButtonRegular>
         </div>
