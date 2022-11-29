@@ -16,7 +16,7 @@ const Header = () => {
       event.preventDefault();
       setScrollY(window.scrollY);
 
-      if (window.scrollY > 10) {
+      if (window.scrollY> 10) {
         setHeader('header scrolled-pos clearfix');
         //console.log('window.scrollY', window.scrollY);
       } else {
@@ -46,31 +46,31 @@ const Header = () => {
       </label>
       <ul className="menu">
         <li>
-          <Link className="menu_item" to="/#" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+          <Link className="menu_item" smooth to="/#">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('house')} size="1x" fixedWidth />
             Home
           </Link>
         </li>
         <li className="dropdown">
-          <Link className="menu_item" to="/#web-development" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+          <Link className="menu_item" smooth to="/#web-development">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('code')} size="1x" />
             Web Development
           </Link>
           <ul className="dropdown-content">
             <li>
-              <Link to="/#general-projects" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#general-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('laptop-code')} size="1x" />
                 General Projects
               </Link>
             </li>
             <li>
-              <Link to="/#opensource-projects" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#opensource-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('github')} size="1x" />
                 OpenSource Projects
               </Link>
             </li>
             <li>
-              <Link to="/#cms-projects" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#cms-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('wordpress-simple')} size="1x" />
                 CMS Projects
               </Link>
@@ -78,25 +78,25 @@ const Header = () => {
           </ul>
         </li>
         <li className="dropdown">
-          <Link className="menu_item" to="/#multimedia-design" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+          <Link className="menu_item" smooth to="/#multimedia-design">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('pen-ruler')} size="1x" fixedWidth />
             Multimedia Desgin
           </Link>
           <ul className="dropdown-content">
             <li>
-              <Link to="/#ui-ux" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#ui-ux">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('desktop')} size="1x" fixedWidth />
                 Design & Research
               </Link>
             </li>
             <li>
-              <Link to="/#mixed-media" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#mixed-media">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('globe')} size="1x" fixedWidth />
                 Mixed Media
               </Link>
             </li>
             <li>
-              <Link to="/#useful-resources" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+              <Link smooth to="/#useful-resources">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('book-open')} size="1x" fixedWidth />
                 Useful Resources
               </Link>
@@ -104,13 +104,13 @@ const Header = () => {
           </ul>
         </li>
         <li>
-          <Link className="menu_item" to="/#art-and-graphic-design" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+          <Link className="menu_item" smooth to="/#art-and-graphic-design">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('palette')} size="1x" fixedWidth />
             Art & Graphics
           </Link>
         </li>
         <li>
-          <Link className="menu_item" to="/#myself-and-reach" scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'start' })}>
+          <Link className="menu_item" smooth to="/#myself-and-reach">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('user-ninja')} size="1x" fixedWidth />
             Who am I?
           </Link>
