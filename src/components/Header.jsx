@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 
@@ -46,74 +46,74 @@ const Header = () => {
       </label>
       <ul className="menu">
         <li>
-          <Link className="menu_item" smooth to="/#">
+          <HashLink className="menu_item" smooth elementId="#">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('house')} size="1x" fixedWidth />
             Home
-          </Link>
+          </HashLink>
         </li>
         <li className="dropdown">
-          <Link className="menu_item" smooth to="/#web-development">
+          <HashLink className="menu_item" smooth elementId="web-development">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('code')} size="1x" />
             Web Development
-          </Link>
+          </HashLink>
           <ul className="dropdown-content">
             <li>
-              <Link smooth to="/#general-projects">
+              <HashLink smooth elementId="general-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('laptop-code')} size="1x" />
                 General Projects
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link smooth to="/#opensource-projects">
+              <HashLink smooth elementId="opensource-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('github')} size="1x" />
                 OpenSource Projects
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link smooth to="/#cms-projects">
+              <HashLink smooth elementId="cms-projects">
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('wordpress-simple')} size="1x" />
                 CMS Projects
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </li>
         <li className="dropdown">
-          <Link className="menu_item" smooth to="/#multimedia-design">
+          <HashLink className="menu_item" smooth elementId="multimedia-design">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('pen-ruler')} size="1x" fixedWidth />
             Multimedia Desgin
-          </Link>
+          </HashLink>
           <ul className="dropdown-content">
             <li>
-              <Link smooth to="/#ui-ux">
+              <HashLink smooth elementId="ui-ux">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('desktop')} size="1x" fixedWidth />
                 Design & Research
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link smooth to="/#mixed-media">
+              <HashLink smooth elementId="mixed-media">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('globe')} size="1x" fixedWidth />
                 Mixed Media
-              </Link>
+              </HashLink>
             </li>
             <li>
-              <Link smooth to="/#useful-resources">
+              <HashLink smooth elementId="useful-resources">
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('book-open')} size="1x" fixedWidth />
                 Useful Resources
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </li>
         <li>
-          <Link className="menu_item" smooth to="/#art-and-graphic-design">
+          <HashLink className="menu_item" smooth elementId="art-and-graphic-design">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('palette')} size="1x" fixedWidth />
             Art & Graphics
-          </Link>
+          </HashLink>
         </li>
         <li>
-          <Link className="menu_item" smooth to="/#myself-and-reach">
+          <HashLink className="menu_item" smooth elementId="myself-and-reach">
             <FontAwesomeIcon className="icon_menu_li" icon={solid('user-ninja')} size="1x" fixedWidth />
             Who am I?
-          </Link>
+          </HashLink>
         </li>
       </ul>
     </header>
