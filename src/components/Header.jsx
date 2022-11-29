@@ -46,31 +46,31 @@ const Header = () => {
       </label>
       <ul className="menu">
         <li>
-          <HashLink className="menu_item" smooth elementId="#">
+          <HashLink className="menu_item" smooth elementId="#" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
             <FontAwesomeIcon className="icon_menu_li" icon={solid('house')} size="1x" fixedWidth />
             Home
           </HashLink>
         </li>
         <li className="dropdown">
-          <HashLink className="menu_item" smooth elementId="web-development">
+          <HashLink className="menu_item" smooth elementId="web-development" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
             <FontAwesomeIcon className="icon_menu_li" icon={solid('code')} size="1x" />
             Web Development
           </HashLink>
           <ul className="dropdown-content">
             <li>
-              <HashLink smooth elementId="general-projects">
+              <HashLink smooth elementId="general-projects" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('laptop-code')} size="1x" />
                 General Projects
               </HashLink>
             </li>
             <li>
-              <HashLink smooth elementId="opensource-projects">
+              <HashLink smooth elementId="opensource-projects" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('github')} size="1x" />
                 OpenSource Projects
               </HashLink>
             </li>
             <li>
-              <HashLink smooth elementId="cms-projects">
+              <HashLink smooth elementId="cms-projects" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={brands('wordpress-simple')} size="1x" />
                 CMS Projects
               </HashLink>
@@ -78,25 +78,25 @@ const Header = () => {
           </ul>
         </li>
         <li className="dropdown">
-          <HashLink className="menu_item" smooth elementId="multimedia-design">
+          <HashLink className="menu_item" smooth elementId="multimedia-design" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
             <FontAwesomeIcon className="icon_menu_li" icon={solid('pen-ruler')} size="1x" fixedWidth />
             Multimedia Desgin
           </HashLink>
           <ul className="dropdown-content">
             <li>
-              <HashLink smooth elementId="ui-ux">
+              <HashLink smooth elementId="ui-ux" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('desktop')} size="1x" fixedWidth />
                 Design & Research
               </HashLink>
             </li>
             <li>
-              <HashLink smooth elementId="mixed-media">
+              <HashLink smooth elementId="mixed-media" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('globe')} size="1x" fixedWidth />
                 Mixed Media
               </HashLink>
             </li>
             <li>
-              <HashLink smooth elementId="useful-resources">
+              <HashLink smooth elementId="useful-resources" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                 <FontAwesomeIcon className="icon_menu_li" icon={solid('book-open')} size="1x" fixedWidth />
                 Useful Resources
               </HashLink>
@@ -104,13 +104,13 @@ const Header = () => {
           </ul>
         </li>
         <li>
-          <HashLink className="menu_item" smooth elementId="art-and-graphic-design">
+          <HashLink className="menu_item" smooth elementId="art-and-graphic-design" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
             <FontAwesomeIcon className="icon_menu_li" icon={solid('palette')} size="1x" fixedWidth />
             Art & Graphics
           </HashLink>
         </li>
         <li>
-          <HashLink className="menu_item" smooth elementId="myself-and-reach">
+          <HashLink className="menu_item" smooth elementId="myself-and-reach" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
             <FontAwesomeIcon className="icon_menu_li" icon={solid('user-ninja')} size="1x" fixedWidth />
             Who am I?
           </HashLink>
